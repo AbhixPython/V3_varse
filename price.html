@@ -1,0 +1,181 @@
+ <!doctype html>
+ <html lang=en>
+ <head>
+ <meta charset=UTF-8>
+ <meta name=viewport content="width=device-width,initial-scale=1">
+ <title>Pricing Plans</title>
+ <style>
+ body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #000000, #8a2be2); /* Black–Purple gradient */
+  color: #fff; /* White primary text */
+  padding: 20px;
+  opacity: 0; /* Initially set opacity to 0 for fade-in */
+  transform: translateY(-20px); /* Initially moved up for slide-down */
+  animation: fadeIn 1s ease-in-out forwards, slideDown 2s ease-in-out forwards;
+ }
+
+ @keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+ }
+
+ @keyframes slideDown {
+  from { transform: translateY(-20px); }
+  to { transform: translateY(0); }
+ }
+
+ header {
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(135deg, #333333, #9932cc);
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+ }
+
+ header h1 {
+  font-size: 2.5em;
+ }
+
+ .pricing-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+ }
+
+ .price-container {
+  background: rgba(0, 0, 0, 0.4); /* Dark, transparent black for container background */
+  border-radius: 15px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle white border */
+ }
+
+ .price-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+ }
+
+ .price-header {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #fff; /* A brighter purple for plan title */
+  margin-bottom: 15px;
+ }
+
+ .price-details {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #fff; /* Lighter grey text for details */
+  margin-bottom: 20px;
+ }
+
+ .price-tag {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #fff; /* Lighter purple for price */
+  margin-bottom: 20px;
+ }
+
+ .price-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+ }
+
+ .button {
+  display: block;
+  text-align: center;
+  background: linear-gradient(135deg, #000000, #8a2be2);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin: 12px auto;
+  width: 80%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 10px rgba(138, 43, 226, 0.2);
+  backdrop-filter: blur(4px);
+ }
+
+ .button:hover {
+  background: #6A1BAA; /* Darker purple on hover */
+  transform: translateY(-3px);
+ }
+
+ h2 {
+  text-align: center;
+  color: #555; /* A dark grey for the separator */
+  margin-top: 30px;
+ }
+
+ .footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #ddd;
+  font-size: 0.9em;
+  margin-top: 40px;
+ }
+ </style>
+ </head>
+ <body>
+ <header>
+ <h1>Pricing Plans</h1>
+ </header>
+ <section class=pricing-section>
+ <div class=price-container>
+ <div class=price-header>Basic Plan</div>
+ <div class=price-details>
+ Perfect for individuals starting out.
+ </div>
+ <div class=price-tag>₹ 299</div>
+ <div class=price-buttons>
+ <a href=# class=button>For 1 Month</a>
+ </div>
+ </div>
+ <div class=price-container>
+ <div class=price-header>Basic Plan</div>
+ <div class=price-details>
+ Good For Average Usage
+ </div>
+ <div class=price-tag>₹ 499</div>
+ <div class=price-buttons>
+ <a href=# class=button>For 2 Months</a>
+ </div>
+ </div>
+ <div class=price-container>
+ <div class=price-header>Standard Plan</div>
+ <div class=price-details>
+ More Stability & Good For Long Efficiency
+ </div>
+ <div class=price-tag>₹ 1399</div>
+ <div class=price-buttons>
+ <a href=# class=button>For 6 Months</a>
+ </div>
+ </div>
+ <div class=price-container>
+ <div class=price-header>Premium Plan</div>
+ <div class=price-details>
+ Best for large organizations & Over Usage
+ </div>
+ <div class=price-tag>₹ 2499</div>
+ <div class=price-buttons>
+ <a href=# class=button>For 1 Year</a>
+ </div>
+ </div>
+ </section>
+ <footer class="footer">
+  © 2025 Serverx. All Rights Reserved.
+ </footer>
+ </body>
+ </html>
+ 

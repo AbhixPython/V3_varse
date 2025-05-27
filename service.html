@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Serverx Official - Multiple Identical Boxes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #000000, #8a2be2); /* Black–Purple gradient */
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: fadeInBg 1.5s ease-in-out;
+        }
+
+        .main-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            /* No max-width here, container will handle its own max-width */
+        }
+
+        .container {
+            max-width: 600px; /* Original max-width */
+            width: 90%; /* Responsive width */
+            margin: 20px auto; /* Adjust margin for spacing between containers */
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), 0 4px 15px rgba(138, 43, 226, 0.2);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: slideUp 1s ease-in-out;
+            color: #fff;
+            text-align: center;
+            transition: transform 0.3s ease; /* Added for hover effect */
+        }
+
+        .container:hover {
+            transform: scale(1.01);
+        }
+
+        .container img { /* Targeted styling for images within a container */
+            max-width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2);
+        }
+
+        .container p { /* Corrected text color for readability */
+            color: #ccc; /* Changed from black to light gray */
+            font-size: 1em;
+            line-height: 1.6;
+            animation: fadeInText 1.6s ease-in-out;
+        }
+
+        .container h1, .container h2 {
+            color: #fff; /* Ensure headings are white */
+            animation: fadeInText 1s ease-in-out;
+        }
+
+        .theme-button {
+            display: block;
+            text-align: center;
+            background: linear-gradient(135deg, #000000, #8a2be2);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 12px auto;
+            width: 80%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            animation: fadeIn 1.5s ease-in-out;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 10px rgba(138, 43, 226, 0.2);
+            backdrop-filter: blur(4px);
+        }
+
+        .theme-button:hover {
+            background: linear-gradient(135deg, #333333, #9932cc);
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 25px rgba(138, 43, 226, 0.5);
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            animation: fadeIn 2s ease-in-out;
+            font-size: 0.9em;
+            width: 100%;
+            max-width: 600px; /* Align with container width */
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #8a2be2;
+        }
+
+        .footer .social-icons {
+            margin-top: 10px;
+        }
+
+        .footer .social-icons a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 1.2em;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .footer .social-icons a:hover {
+            color: #8a2be2;
+            transform: scale(1.2);
+        }
+
+        /* --- Animations --- */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px) scale(0.95); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        @keyframes slideUp {
+            0% { opacity: 0; transform: translateY(40px) scale(0.9); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInBg {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            .theme-button {
+                font-size: 1.1em;
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="main-wrapper">
+    <div class="container">
+        <img src="https://files.catbox.moe/zjnui1.jpg" alt="Automation Kit">
+            
+            <h1 style="animation: fadeInText 1s ease-in-out;">Convo</h1>
+            <p>This Tool Using Facebook Acces Token Send Massage Automatically On Target Tid.</p>
+        <a href="http://web.raghavchoudhary.site:3000/" class="theme-button">Learn More</a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <img src="https://files.catbox.moe/zjnui1.jpg" alt="Automation Kit">
+        <h1>Extract Page Token And Tid</h1>
+        <p> This Tool Using Facebook Access Token Extract Your Pages Token And Your Group Tids.</p>
+        <a href="https://pagetoken.darkester.online/" class="theme-button">Learn More</a>
+    </div>
+
+    <div class="container">
+        <img src="https://files.catbox.moe/zjnui1.jpg" alt="Loader Solutions">
+        <h1>Cookie Cheaker</h1>
+        <p> This Tool Is Cookie Cheaker Using Facebook Cookie Gives You Information About Cookie.</p>
+        <a href="http://web0.bhoja-alliance.online:3005/" class="theme-button">Learn More</a>
+        </div>
+
+    <div class="container">
+        <img src="https://files.catbox.moe/zjnui1.jpg" alt="Loader Solutions">
+        <h1>Token Cheaker</h1>
+        <p> This Tool Is Token Cheaker Using Facebook Token Gives You Information About Token.</p>
+        <a href="https://tok.darkeagle.online/" class="theme-button">Learn More</a>
+    
+    </div>
+        <div class="container">
+        <img src="https://files.catbox.moe/zjnui1.jpg" alt="Loader Solutions">
+        <h1>Cookie To Json Converter</h1>
+        <p> This Tool Is Using Facebook Cookie To Convert Into Json.</p>
+        <a href="https://darkeagle.online/json.html" class="theme-button">Learn More</a>
+    
+    </div>
+
+    <div class="container">
+        <img src="https://files.catbox.moe/zjnui1.jpg" alt="Loader Solutions">
+        <h1>Youtube Downloader</h1>
+        <p>This Tool Is Downloader Audio / Video Of YouTube By Link.</p>
+        <a href="http://104.168.76.139:27002/" class="theme-button">Learn More</a>
+</div>
+<div class="container">
+        <img src="https://files.catbox.moe/zjnui1.jpg" alt="Loader Solutions">
+        <h1>Cookie To Token Generator</h1>
+        <p>This Tool Is Using Facebook Cookie To Convert Into Token ( Note Token Will be Expire When Cookie Is Dead ).</p>
+        <a href="https://generator.darkester.online/" class="theme-button">Learn More</a>
+</div>
+    <footer class="footer">
+        <p>&copy; 2025 Serverx. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

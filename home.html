@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Page Title</title>
+<style>
+/* Keyframe animation for fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 20px; /* Kept original padding, adjust if needed */
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif; /* Changed font to Inter */
+  background: linear-gradient(135deg, #000000, #8a2be2); /* Black–Purple gradient */
+  color: #fff; /* White primary text */
+  text-align: center; /* Center content in the body */
+
+  /* Apply the fade-in animation */
+  animation: fadeIn 1.5s ease-in-out forwards; /* 1.5 seconds duration, ease-in-out timing, keeps final state */
+}
+
+img {
+  max-width: 90%; /* Increased image size: was 80% */
+  height: auto;
+  display: block;
+  margin: 0 auto 30px auto; /* Increased bottom margin for more space */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Style for the big "Home" text */
+.home-text {
+  font-size: 3em; /* Make the text big */
+  font-weight: bold;
+  color: #fff; /* White color for the text */
+  margin-bottom: 40px; /* Space between "Home" and the buttons */
+  text-shadow: 0 0 10px rgba(138, 43, 226, 0.7); /* Subtle glow effect */
+  animation: fadeIn 1.5s ease-in-out forwards; /* Apply fade-in animation */
+}
+
+.button-container {
+  margin-top: 20px; /* Space between the image/home text and buttons */
+}
+
+.button {
+  display: block;
+  text-align: center;
+  background: linear-gradient(135deg, #000000, #8a2be2);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin: 12px auto;
+  width: 80%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  animation: fadeIn 1.5s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 10px rgba(138, 43, 226, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.button:hover {
+  background: #6A1BAA; /* Darker purple on hover */
+  transform: translateY(-3px);
+}
+
+.footer {
+    margin-top: 50px; /* Space above the footer */
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.7); /* Slightly transparent white for footer text */
+}
+</style>
+</head>
+<body>
+
+<img src="https://i.ibb.co/B2wSHtZz/172e1d62b08b19cc3c72ecc4cd31aeda.jpg" alt="A dark, abstract background with flowing purple and black elements, possibly a nebula or digital art." onerror="this.onerror=null;this.src='https://placehold.co/600x400/000000/FFFFFF?text=Image+Not+Found';">
+
+<div class="home-text">
+ Welcome To Serverx V3.
+</div>
+
+<div class="button-container">
+  <a href="service.html" class="button">Service</a>
+</div>
+<div class="button-container">
+  <a href="price.html" class="button">Pricing</a>
+</div>
+<div class="button-container">
+  <a href="porn.html" class="button">Meet Creator</a>
+</div>
+<footer class="footer">
+    <p>© 2025 Serverx. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
+
