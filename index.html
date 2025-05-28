@@ -20,6 +20,21 @@
             justify-content: center;
             align-items: center;
             animation: fadeInBg 1.5s ease-in-out;
+            overflow: hidden; /* Hide stars that go beyond the screen */
+        }
+
+        .star {
+            position: fixed;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 0 5px white;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(105vh) scale(0);
+            }
         }
 
         .container {
@@ -35,6 +50,7 @@
             color: #fff;
             text-align: center;
             transition: transform 0.3s ease; /* Added for hover effect */
+            z-index: 10; /* Ensure content is above the stars */
         }
 
         .container:hover {
@@ -77,6 +93,8 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             animation: fadeIn 2s ease-in-out;
             font-size: 0.9em;
+            z-index: 10; /* Ensure footer is above the stars */
+            position: relative; /* Needed for z-index to work */
         }
 
         .footer a {
@@ -128,18 +146,52 @@
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="content">
-        <img src="https://i.ibb.co/B2wSHtZz/172e1d62b08b19cc3c72ecc4cd31aeda.jpg" alt="Serverx Official Image" style="width: 100%; height: auto; border-radius: 12px;">
-        <h1 style="animation: fadeInText 1s ease-in-out;">Serverx V3 </h1>
-        <a href="service.html" class="theme-button">Service</a>
-        <a href="price.html" class="theme-button">Pricing</a> <h2 style="color: black; font-size: 3em; margin-top: 30px; animation: fadeInText 1.4s ease-in-out;"></h2>
-        <a href="creator.html" class="theme-button">Creator</a>
-        
-    </div>
-<footer class="footer">
-    <p>&copy; 2025 Serverx. All rights reserved.</p>
-    <div class="social-icons">
-</footer>
+    <div id="star-container">
+        </div>
+    <div class="container">
+        <div class="content">
+            <img src="https://i.ibb.co/B2wSHtZz/172e1d62b08b19cc3c72ecc4cd31aeda.jpg" alt="Serverx Official Image" style="width: 100%; height: auto; border-radius: 12px;">
+            <h1 style="animation: fadeInText 1s ease-in-out;">Serverx V3 </h1>
+            <a href="service.html" class="theme-button">Service</a>
+            <a href="price.html" class="theme-button">Pricing</a> <h2 style="color: black; font-size: 3em; margin-top: 30px; animation: fadeInText 1.4s ease-in-out;"></h2>
+            <a href="creator.html" class="theme-button">Creator</a>
+
+        </div>
+    <footer class="footer">
+        <p>&copy; 2025 Serverx. All rights reserved.</p>
+        <div class="social-icons">
+    </footer>
+
+    <script>
+        const starContainer = document.getElementById('star-container');
+        const numberOfStars = 200; // Adjust the number of stars as needed
+
+        function createStar() {
+            const star = document.createElement('div');
+            star.classList.add('star');
+
+            // Random size for the stars
+            const size = Math.random() * 5 + 2; // Size between 2px and 7px
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+
+            // Random position on the screen
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.top = `${Math.random() * 100}vh`;
+
+            // Random animation duration for varied falling speed
+            const duration = Math.random() * 5 + 6; // Duration between 2s and 5s
+            star.style.animationDuration = `${duration}s`;
+
+            // Random delay to make stars appear at different times
+            star.style.animationDelay = `-${Math.random() * duration}s`;
+
+            starContainer.appendChild(star);
+        }
+
+        for (let i = 0; i < numberOfStars; i++) {
+            createStar();
+        }
+    </script>
 </body>
 </html>
