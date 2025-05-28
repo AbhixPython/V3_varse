@@ -13,7 +13,7 @@
         background: linear-gradient(135deg, #000000, #8a2be2); /* Black–Purple gradient */
         color: #fff;
         margin: 0;
-        padding: 20px;
+        padding: 15px; /* Adjusted padding */
         text-align: center;
         min-height: 100vh;
         display: flex;
@@ -28,7 +28,7 @@
         position: fixed;
         background: white;
         border-radius: 50%;
-        box-shadow: 0 0 5px white;
+        box-shadow: 0 0 3px white; /* Adjusted shadow */
         animation: fall linear infinite;
     }
 
@@ -39,12 +39,12 @@
     }
 
 .container {
-    max-width: 500px; /* Increased container width */
+    max-width: 400px; /* Adjusted container width */
     margin: auto;
-    padding: 40px; /* Increased padding */
+    padding: 30px; /* Adjusted padding */
     background: rgba(255, 255, 255, 0.08);
-    border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), 0 4px 15px rgba(138, 43, 226, 0.2);
+    border-radius: 15px; /* Adjusted border-radius */
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2), 0 3px 10px rgba(138, 43, 226, 0.2); /* Adjusted shadow */
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     animation: slideUp 1s ease-in-out;
@@ -57,55 +57,55 @@
 }
 
 .logo-container {
-    width: 100%; /* Increased logo container width */
-    margin-bottom: 30px; /* Increased margin */
+    width: 90%; /* Adjusted logo container width */
+    margin-bottom: 20px; /* Adjusted margin */
 }
 
 .logo-container img {
     max-width: 100%; /* Ensure the image doesn't exceed the container's width */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-height: 200px; /* Increased maximum height */
+    border-radius: 8px; /* Adjusted border-radius */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Adjusted shadow */
+    max-height: 150px; /* Adjusted maximum height */
 }
 
 h1 {
-    font-size: 2.5em; /* Adjusted title size */
+    font-size: 2em; /* Adjusted title size */
     color: white; /* Set text color to white */
     animation: fadeInText 1.5s ease-in-out;
-    margin-bottom: 40px; /* Increased margin below title */
+    margin-bottom: 30px; /* Adjusted margin below title */
 }
 
 .login-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%; /* Increased form width */
+    width: 80%; /* Adjusted form width */
     margin: 0 auto;
 }
 
 .input-group {
-    margin-bottom: 25px; /* Increased margin */
+    margin-bottom: 20px; /* Adjusted margin */
     width: 100%;
 }
 
 .input-group label {
     display: block;
     text-align: left;
-    margin-bottom: 8px; /* Increased margin */
+    margin-bottom: 6px; /* Adjusted margin */
     font-weight: 500;
     color: #eee;
-    font-size: 1.1em; /* Slightly larger label */
+    font-size: 1em; /* Adjusted label size */
 }
 
 .input-group input {
-    width: calc(100% - 20px);
-    padding: 12px; /* Increased padding */
+    width: calc(100% - 16px); /* Adjusted width calculation */
+    padding: 10px; /* Adjusted padding */
     border: none;
-    border-radius: 8px;
+    border-radius: 6px; /* Adjusted border-radius */
     background: rgba(255, 255, 255, 0.15);
     color: #fff;
-    font-size: 1.1em; /* Slightly larger input text */
+    font-size: 1em; /* Adjusted input text size */
     transition: background-color 0.3s ease;
 }
 
@@ -117,14 +117,14 @@ h1 {
 .login-button {
     background: linear-gradient(135deg, #000000, #8a2be2);
     color: white;
-    padding: 15px 25px; /* Increased padding */
-    border-radius: 12px;
+    padding: 12px 20px; /* Adjusted padding */
+    border-radius: 10px; /* Adjusted border-radius */
     text-decoration: none;
-    font-size: 1.3em; /* Increased font size */
+    font-size: 1.1em; /* Adjusted font size */
     width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     animation: fadeIn 1.5s ease-in-out;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 10px rgba(138, 43, 226, 0.2);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3), 0 0 8px rgba(138, 43, 226, 0.2); /* Adjusted shadow */
     backdrop-filter: blur(4px);
     border: none;
     cursor: pointer;
@@ -132,14 +132,14 @@ h1 {
 
 .login-button:hover {
     background: linear-gradient(135deg, #333333, #9932cc);
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 25px rgba(138, 43, 226, 0.5);
+    transform: scale(1.03); /* Adjusted scale */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6), 0 0 20px rgba(138, 43, 226, 0.5); /* Adjusted shadow */
 }
 
 .error-message {
     color: #ff4d4d;
-    margin-top: 15px; /* Increased margin */
-    font-size: 1em; /* Slightly larger error message */
+    margin-top: 10px; /* Adjusted margin */
+    font-size: 0.9em; /* Adjusted error message size */
 }
 
 .hidden {
@@ -148,24 +148,24 @@ h1 {
 
 .content {
     display: none; /* Initially hide the content */
-    margin-top: 40px; /* Increased margin */
+    margin-top: 30px; /* Adjusted margin */
 }
 
 .content img {
-    width: 100%; /* Make the content image fill the container width */
+    width: 80%; /* Adjusted content image width */
     height: auto;
-    border-radius: 15px;
-    margin-bottom: 25px; /* Increased margin */
-    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2);
+    border-radius: 10px; /* Adjusted border-radius */
+    margin-bottom: 20px; /* Adjusted margin */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2); /* Adjusted shadow */
     max-height: none; /* Remove any max-height restriction */
 }
 
 .footer {
-    margin-top: 40px; /* Increased margin */
-    padding-top: 25px; /* Increased padding */
+    margin-top: 30px; /* Adjusted margin */
+    padding-top: 20px; /* Adjusted padding */
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     animation: fadeIn 2s ease-in-out;
-    font-size: 1em; /* Slightly larger footer text */
+    font-size: 0.9em; /* Adjusted footer text size */
     z-index: 10; /* Ensure footer is above the stars */
     position: relative; /* Needed for z-index to work */
 }
@@ -182,19 +182,19 @@ h1 {
 }
 
 .footer .social-icons {
-    margin-top: 12px; /* Increased margin */
+    margin-top: 10px; /* Adjusted margin */
 }
 
 .footer .social-icons a {
-    margin: 0 12px; /* Increased margin */
+    margin: 0 10px; /* Adjusted margin */
     color: #fff;
-    font-size: 1.4em; /* Increased font size */
+    font-size: 1.2em; /* Adjusted font size */
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer .social-icons a:hover {
     color: #8a2be2;
-    transform: scale(1.2);
+    transform: scale(1.1); /* Adjusted scale */
 }
 
   </style>
@@ -204,7 +204,7 @@ h1 {
         </div>
 <div class="container">
     <div class="logo-container">
-        <img src="https://i.ibb.co/B2wSHtZz/172e1d62b08b19cc3c72ecc4cd31aeda.jpg" alt="Logo" style="max-height: 250px;"> </div>
+        <img src="https://i.ibb.co/B2wSHtZz/172e1d62b08b19cc3c72ecc4cd31aeda.jpg" alt="Logo" style="max-height: 170px;"> </div>
     <h1>𝐀𝐜𝐜𝐞𝐬𝐬 𝐏𝐨𝐫𝐭𝐚𝐥</h1>
     <form id="loginForm" class="login-form">
         <div class="input-group">
@@ -220,7 +220,7 @@ h1 {
     </form>
 
     <div id="contentArea" class="content hidden">
-        <img src="https://i.ibb.co/B2wSHtZz/172e1d62b08b19cc3c72ecc4cd31aeda.jpg" style="width: 100%; height: auto; border-radius: 12px;">
+        <img src="https://i.ibb.co/B2wSHtZz/172e1d62b08b19cc3c72ecc4cd31aeda.jpg" style="width: 80%; height: auto; border-radius: 10px;">
         </div>
 
     <footer class="footer">
@@ -237,17 +237,17 @@ h1 {
 </div>
 <script>
     const starContainer = document.getElementById('star-container');
-    const numberOfStars = 180;
+    const numberOfStars = 150; // Adjusted number of stars
 
     for (let i = 0; i < numberOfStars; i++) {
         const star = document.createElement('div');
         star.classList.add('star');
-        const size = Math.random() * 4 + 2;
+        const size = Math.random() * 3 + 1.5; // Adjusted star size
         star.style.width = `${size}px`;
         star.style.height = `${size}px`;
         star.style.left = `${Math.random() * 100}vw`;
         star.style.top = `${Math.random() * 100}vh`;
-        const duration = Math.random() * 5 + 6;
+        const duration = Math.random() * 4 + 5; // Adjusted duration
         star.style.animationDuration = `${duration}s`;
         star.style.animationDelay = `-${Math.random() * duration}s`;
         starContainer.appendChild(star);
